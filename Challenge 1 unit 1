@@ -1,1 +1,12 @@
-https://replit.com/@SreevalliSreeva/Challenge-11?mobileWebview=1&mobileBridge=1&hideBottomBar=1&forceTheme=replitDark&fun=1#main.py
+def fact_rec(n):
+  if n == 0 or n == 1:
+    return 1
+  else:
+    return n * fact_rec(n - 1)
+
+
+number = int(input("Enter a value:"))
+res = fact_rec(number)
+
+print("the factorial of {} is{}.".format(number, res))
+
